@@ -1,5 +1,5 @@
 deployment "simple" {
   inputs = {
-   clusters = upstream_input.simple.clusters.clusters
+   clusters = upstream_input.clusters.clusters
   }
 }
