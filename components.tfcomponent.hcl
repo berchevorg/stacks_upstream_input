@@ -5,13 +5,6 @@ required_providers {
     }
   }
 
-variable "aloda" {
-type = map(object({
-    current_kubernetes_version = map(string)
-    id                         = map(string)
-  }))
-}
-
 
 variable "clusters" {
   description = "Map of Kubernetes clusters"
