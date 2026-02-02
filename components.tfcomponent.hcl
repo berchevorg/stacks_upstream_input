@@ -14,6 +14,13 @@ variable "clusters" {
   }))
 }
 
+variable "clusters2" {
+  description = "Map of Kubernetes clusters"
+  type = map(object({
+    version = string
+    id      = string
+  }))
+}
 
 provider "null" "this" {}
 component "null" {
